@@ -17,8 +17,3 @@
     .buttonscontainer
       a.button.reg(data-bind='click: $root.setLocation.bind($data, "#/"), translate: "global/cancel"') Cancel
       a.button.blue#confirm-add-button(data-bind='translate: {html: { message: "addconfirm/connectaccount", variables: { serviceName: addconfirm.serviceName }}}') Connect #[span(data-bind="text: addconfirm.serviceName")] Account
-
-  //- "Powered by Kloudless" footer
-  footer
-    .row
-      div(data-bind='template: {name: "powered-by-kl-footer"}')
