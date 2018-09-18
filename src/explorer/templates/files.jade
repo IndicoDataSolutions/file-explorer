@@ -61,7 +61,7 @@
         // /ko
 
     //- Current directory view
-    table(data-bind='with: files').clickable
+    table(data-bind='with: files').files-header.clickable
       thead
         tr
           th(data-bind='click: sort("name"), translate: "files/name"') Name
@@ -74,7 +74,7 @@
             .arrow-up#sort-recent-up
             .arrow-down#sort-recent-down
     #fs-scroller.iewrapper
-      table(data-bind='with: files').clickable
+      table(data-bind='with: files').files-container.clickable
         // ko if: cwd().length == 0 && !$root.loading()
         tbody
           tr.info-row(align="center")
@@ -154,6 +154,5 @@
           // ko if: flavor() == 'saver'
           a(data-bind='click: save, translate: "global/save"').button.blue Save
           // /ko
-        div(data-bind='template: {name: "powered-by-kl-footer"}')
 
     //- Debug info, since we don't have proper UI elements

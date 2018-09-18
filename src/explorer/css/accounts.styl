@@ -1,7 +1,7 @@
 @import 'variables'
 
 div.accounts
-    background:#fdfdfd
+    background:#283243
     height:100%
     .containall
         padding:35px
@@ -14,7 +14,8 @@ div.accounts
         width:100%
         position:fixed
         z-index:10
-        background-color: #f5f6f7
+        background-color: $header_color
+        color: $font_color
         .backcontain,.nobackcontain
             *:not(span)
                 float:left
@@ -83,10 +84,11 @@ div.accounts
     .logout-message
         float: right
         margin-bottom:15px
-        color: #2a8eff;
+        color: $link_hover_color;
         font-size: 12px;
         &:hover
             cursor: pointer
+            color: $font_color
 
     ul.linked-services
         list-style:none
@@ -97,10 +99,10 @@ div.accounts
         padding:0
         margin:0
         width:100%
-        border:1px solid #d7e5f5
+        border:1px solid #384558
         border-radius:3px
         overflow:hidden
-        background:#fff
+        background:#283243
         &:last-child
             margin-bottom:20px
         &:not(:first-child)
@@ -124,7 +126,6 @@ div.accounts
                     span
                         display:none
             &.accounts
-                background:#f5f9ff
                 min-height:60px
                 float: right
                 padding: 0
@@ -157,11 +158,9 @@ div.accounts
                         line-height: 20px
                         cursor:pointer
                         a
-                            color:#000000
+                            color: $font_color
                             &:hover
-                                border-color: #3b97ff;
-                                background: #fafeff;
-                                color: #4a9eff;
+                                color: $link_hover_color;
                 ul.accountnames a.alert
                     float: right
                     width:16px
@@ -173,23 +172,23 @@ div.accounts
             width: 100%
             display: block
         div.service
-            background:#fff
+            background:transparent
             width: 125px;
             height: 115px;
-            border:1px solid #dfdfdf
+            border:1px solid #5a6982
             display:block
             margin: 0 auto
             border-radius:3px
             &:hover
-                border-color: #3b97ff;
-                background: #fafeff;
+                border-color: #8498b6;
+                background: #384558;
                 span.servicename
-                    color: #4a9eff;
+                    color: $font_color;
             &:active
-                border-color: #1b77dd;
-                background: #dae8ff;
+                border-color: #8498b6;
+                background: #384558;
                 span.servicename
-                    color: #2a7edd;
+                    color: $font_color;
             img.servicelogo
                 margin: 10px 25px 0px
                 width:70px
@@ -197,7 +196,7 @@ div.accounts
             span.servicename-container
                 line-height: 2.6em;
             span.servicename
-                color:#575757
+                color:$font_color
                 display:inline-block
                 text-align:center
                 vertical-align:middle

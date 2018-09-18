@@ -5,7 +5,6 @@
       .backcontain(data-bind='if: accounts.all().length > 0')
         a.backbtn(data-bind='click: $root.setLocation.bind($data, "#/files")')
           div.arrow
-        img.klogo(data-bind='attr: {src: logo_url() || $root.static("/ext-assets/kloudless32x33.png")}')
         span(data-bind='translate: "accounts/manage"') Manage your cloud storage accounts here.
       .nobackcontain(data-bind='if: accounts.all().length < 1')
         div.nobackbtn
